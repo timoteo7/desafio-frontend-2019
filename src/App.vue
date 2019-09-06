@@ -17,7 +17,7 @@
 <script>
 
 import Header from './components/Header'
-//import Banner from './components/Banner'
+import Banner from './components/Banner'
 //import Products from './components/Products'
 //import About from './components/About'
 //import News from './components/News'
@@ -42,7 +42,7 @@ export default {
   name: 'app',
   components: {
     Header,
-    //Banner,
+    Banner,
     //Products,
     //About,
     //News,
