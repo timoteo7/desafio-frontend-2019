@@ -16,7 +16,7 @@
 
 <script>
 
-//import Header from './components/Header'
+import Header from './components/Header'
 //import Banner from './components/Banner'
 //import Products from './components/Products'
 //import About from './components/About'
@@ -41,7 +41,7 @@ Vue.prototype.$url = ''
 export default {
   name: 'app',
   components: {
-    //Header,
+    Header,
     //Banner,
     //Products,
     //About,
