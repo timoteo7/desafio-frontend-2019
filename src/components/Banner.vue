@@ -1,13 +1,13 @@
 <template>
         <carousel 
-            per-page="1" 
-            autoplay="true" 
-            loop="true" 
-            autoplayTimeout='5000'
+            :per-page=1
+            :autoplay=true
+            :loop=true
+            :autoplayTimeout=5000
             paginationPosition='bottom-overlay' 
             paginationColor='transparent' 
             paginationActiveColor='white'
-            paginationPadding='0'
+            :paginationPadding=0
         > 
 
             <slide v-for="banner in banners" :key="banner[header[0]]">
@@ -70,6 +70,7 @@ export default {
 
     .VueCarousel-pagination{
         bottom: 32%!important;
+        @media not all and(min-width:768px) { display:none;}
 
         .VueCarousel-dot{
             border: 1px solid white!important;

@@ -18,7 +18,7 @@
 
 import Header from './components/Header'
 import Banner from './components/Banner'
-//import Products from './components/Products'
+import Products from './components/Products'
 //import About from './components/About'
 //import News from './components/News'
 //import Partners from './components/Partners'
@@ -43,7 +43,7 @@ export default {
   components: {
     Header,
     Banner,
-    //Products,
+    Products,
     //About,
     //News,
     //Partners,

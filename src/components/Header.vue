@@ -42,12 +42,13 @@
       
         a{
           color: #515151;
-          @media (min-width:1024px) { padding: .45rem 2.15rem;}
-          @media not all and (min-width:1024px) {padding: .45rem .9rem;}
+          @media (min-width:992px) { padding: .45rem 2.15rem;}
+          @media not all and (min-width:992px) {padding: .45rem .9rem;}
           font-size: 0.85rem;
           font-weight: 900;
           margin-left: 16px;
           margin-right: 2px;
+          outline: none;
 
           &:hover {
             color: #a67b52;
