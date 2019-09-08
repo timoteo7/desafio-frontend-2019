@@ -15,7 +15,7 @@
               <li ><a href="#products"  >RECEITAS</a></li>
               <li ><a href="#news"      >NOTÍCIAS</a></li>
               <li ><a href="#contact"   >CONTATO</a></li>
-              <li ><a href="#" ><img src="../assets/search-solid.svg" alt="Procura"></a></li>
+              <li ><a href="#" ><font-awesome-icon :icon="['fas', 'search']" size="lg" /></a></li>
             </ul>
           </div>
         </nav>

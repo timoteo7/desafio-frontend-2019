@@ -3,11 +3,11 @@
     <Header />
     <Banner :link="$url+'y3zct'" :header="['id','title','image_url']" />
     <Products :link="$url+'dbycd'" :header="['id','name','image_url']" />
-    <b-container id="content"><b-row>
+    <b-container id="meio"><b-row>
         <b-col sm="8"> <About /> </b-col>
         <b-col sm="4"> <News :link="$url+'11qq59'" :header="['id','description','published_at']" /> </b-col>
     </b-row></b-container>
-    <!--Partners />
+    <!--Partners :link="$url+'qfhnh'" :header="['id','name','image_url']" />
     <Contact />
     <Footer /-->
   </div>
@@ -21,6 +21,8 @@ import Products from './components/Products'
 import About from './components/About'
 import News from './components/News'
 //import Partners from './components/Partners'
+//import Partners from './components/Contact'
+//import Partners from './components/Footer'
 
 import Vue from 'vue';
 
@@ -49,9 +51,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#content{
-  margin-top: 4rem;
+
+#meio{
+  margin-top: 3.9rem;
 }
+
+.col-sm-8, .col-sm-4{
+  padding:0;
+}
+
 </style>
 
 <style lang="scss">
@@ -62,5 +70,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: .55rem;
+  outline: none;
 }
 </style>

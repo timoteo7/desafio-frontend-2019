@@ -17,7 +17,7 @@
 </template>
 
 <script>
-    //import axios from "axios"
+    import axios from "axios"
     import { Carousel, Slide } from 'vue-carousel';
 
 export default {
@@ -49,9 +49,9 @@ export default {
         }
     },
 
-    mounted(){
-        //axios.get(this.link)
-                //.then(response => this.banners = Object.assign([], response.data) )
+    created(){
+        axios.get(this.link)
+                .then(response => this.banners = Object.assign([], response.data) )
     },
 }
 </script>

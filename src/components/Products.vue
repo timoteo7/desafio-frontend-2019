@@ -13,7 +13,7 @@
 </template>
 
 <script>
-    //import axios from "axios"
+    import axios from "axios"
 
 export default {
     props: {
@@ -51,9 +51,9 @@ export default {
         ] }
     },
 
-    mounted() {
-        //axios.get(this.link)
-                //.then(response => this.products = Object.assign([], response.data) )
+    created() {
+        axios.get(this.link)
+                .then(response => this.products = Object.assign([], response.data) )
     }
 }
 </script>
@@ -118,7 +118,3 @@ export default {
 }
 
 </style>
-
-
-
-
