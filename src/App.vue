@@ -4,8 +4,8 @@
     <Banner :link="$url+'y3zct'" :header="['id','title','image_url']" />
     <Products :link="$url+'dbycd'" :header="['id','name','image_url']" />
     <b-container id="meio"><b-row>
-        <b-col sm="8"> <About /> </b-col>
-        <b-col sm="4"> <News :link="$url+'11qq59'" :header="['id','description','published_at']" /> </b-col>
+        <b-col lg="8"> <About /> </b-col>
+        <b-col lg="4"> <News :link="$url+'11qq59'" :header="['id','description','published_at']" /> </b-col>
     </b-row></b-container>
     <!--Partners :link="$url+'qfhnh'" :header="['id','name','image_url']" />
     <Contact />
@@ -52,11 +52,9 @@ export default {
 
 <style scoped lang="scss">
 
-#meio{
-  margin-top: 3.9rem;
-}
+@media (min-width:768px) { #meio{margin-top: 3.9rem;}}
 
-.col-sm-8, .col-sm-4{
+.col-lg-8, .col-lg-4{
   padding:0;
 }
 

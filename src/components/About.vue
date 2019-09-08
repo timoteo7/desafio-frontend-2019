@@ -1,13 +1,13 @@
 <template>
     <b-container>
         <b-row>
-            <b-col sm="5">
+            <b-col md="5">
                 <div id="inner">
                     <img src="../assets/about.jpg" alt="image">
                 </div>
             </b-col>
         
-            <b-col id='about' sm="7">
+            <b-col id='about' md="7">
                 <h1>SOBRE A BAKERY</h1>
                 <div >
                     <p>
@@ -37,23 +37,33 @@
 .container{
     margin-top: 38px;
 
-    #inner{
-        position: absolute;
-        overflow: hidden;
-        height: 311px;
-        width:265px;
-        margin:0;
-        padding:0;
-
-        img{
-            position: absolute;
-            top:-0.7%;
-            left: -21%;
-            height:322px;
+    @media not all and(min-width:768px){
+        #inner{
+            img{
+                width:100%;
+            }
         }
     }
 
-    .col-sm-5 {
+    @media (min-width:768px){
+        #inner{
+            position: absolute;
+            overflow: hidden;
+            height: 311px;
+            width:265px;
+            margin:0;
+            padding:0;
+
+            img{
+                position: absolute;
+                top:-0.7%;
+                left: -21%;
+                max-height:322px;
+            }
+        }
+    }
+
+    .col-md-5 {
         padding: 0px 10px;
     }
 
