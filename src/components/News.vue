@@ -1,10 +1,10 @@
 <template>
     <div id="news">
         <h1>ÚLTIMAS NOTÍCIAS</h1>
-        <div v-for="New in news" :key="New[header[0]]" >
-            <p>{{ New[header[2]] }}</p>
-            <div id="short">{{ New[header[1]] }}</div>
-            <hr>
+        <div v-for="(New , index) in news" :key="New[header[0]]" >
+            <p>{{ New[header[2]] | formatDate }}</p>
+            <div id="short">{{ New[header[1]] | truncate(85) }}</div>
+            <hr v-if="index != news.length - 1">
         </div>
         <div id="link">
             <a href="#">Lista Completa <img src="../assets/long-arrow-right.svg" /></a>
@@ -52,6 +52,11 @@ export default {
         }
     },
 
+    filters: {
+        formatDate  : value         => new Intl.DateTimeFormat('pt-BR').format(new Date(value)),
+        truncate    : (value, limit)=> value.length > limit ? value.substring(0, limit - 3 )+'...' : value,
+    },
+
     created() {
         axios.get(this.link)
             .then(response => this.news = Object.assign([], response.data) )
@@ -83,13 +88,22 @@ export default {
     }
 
     #short{
-        color: #484848;
+        color: #787878;
         font-size: 14px;
         font-weight: 100;
+        margin-bottom: 0;
+    }
+
+    hr{
+        border-color:WhiteSmoke;
+        margin-top: .85rem;
+        margin-bottom: .85rem;
     }
 
     #link{
         text-align: right;
+        font-size: 14px;
+        margin-top: 20px;
 
         a{
             color: #a67b52;

@@ -71,14 +71,15 @@
         padding-right: 45px;
         padding-left: 26px;
         text-align: left;
-        color: #484848;
+        color: #787878;
         font-size: .96rem;
         font-weight: 100;
         
 
         h1{
+            color:black;
             font-size: 18px;
-            font-weight: 700;
+            font-weight: 900;
             margin-bottom: 1.2rem;
         }
         
