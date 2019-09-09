@@ -7,8 +7,8 @@
         <b-col lg="8"> <About /> </b-col>
         <b-col lg="4"> <News :link="$url+'11qq59'" :header="['id','description','published_at']" /> </b-col>
     </b-row></b-container>
-    <!--Partners :link="$url+'qfhnh'" :header="['id','name','image_url']" />
-    <Contact />
+    <Partners :link="$url+'qfhnh'" :header="['id','name','image_url']" />
+    <!--Contact />
     <Footer /-->
   </div>
 </template>
@@ -20,7 +20,7 @@ import Banner from './components/Banner'
 import Products from './components/Products'
 import About from './components/About'
 import News from './components/News'
-//import Partners from './components/Partners'
+import Partners from './components/Partners'
 //import Partners from './components/Contact'
 //import Partners from './components/Footer'
 
@@ -43,7 +43,7 @@ export default {
     Products,
     About,
     News,
-    //Partners,
+    Partners,
     //Contact,
     //Footer,
   }

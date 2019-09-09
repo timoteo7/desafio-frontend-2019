@@ -57,25 +57,25 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style scoped lang="scss">
 
 .VueCarousel{
     margin-top: 8px;
 
-    .VueCarousel-slide{
+    /deep/ .VueCarousel-slide{
         img{
             width: 100%;
         }
     }
 
-    .VueCarousel-pagination{
-        bottom: 32%!important;
+    /deep/ .VueCarousel-pagination{
+        bottom: 32%;
         @media not all and(min-width:768px) { display:none;}
 
         .VueCarousel-dot{
-            border: 1px solid white!important;
+            border: 1px solid white;
             margin: 1px 9px;
-            outline: none!important;
+            outline: none;
         }
     }
 }

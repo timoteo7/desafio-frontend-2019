@@ -1,5 +1,5 @@
 <template>
-    <b-container id="products">
+    <b-container id="products" v-if="products.length">
         <b-row center>
             <b-col v-for="product in products" :key="product[header[0]]">
                 <figure>
