@@ -86,7 +86,8 @@ export default {
 
 <style scoped lang="scss">
 #partners {
-    margin: 60px 0;
+    margin-top:60px;
+    margin-bottom:52px;
     padding-top:43px;
     padding-bottom:30px;
     background-color: #f4f4f4;

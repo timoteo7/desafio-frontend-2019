@@ -8,8 +8,8 @@
         <b-col lg="4"> <News :link="$url+'11qq59'" :header="['id','description','published_at']" /> </b-col>
     </b-row></b-container>
     <Partners :link="$url+'qfhnh'" :header="['id','name','image_url']" />
-    <!--Contact />
-    <Footer /-->
+    <Contact />
+    <!--Footer /-->
   </div>
 </template>
 
@@ -21,7 +21,7 @@ import Products from './components/Products'
 import About from './components/About'
 import News from './components/News'
 import Partners from './components/Partners'
-//import Partners from './components/Contact'
+import Contact from './components/Contact'
 //import Partners from './components/Footer'
 
 import Vue from 'vue';
@@ -44,7 +44,7 @@ export default {
     About,
     News,
     Partners,
-    //Contact,
+    Contact,
     //Footer,
   }
 }

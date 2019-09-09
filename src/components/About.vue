@@ -3,7 +3,7 @@
         <b-row>
             <b-col md="5">
                 <div id="inner">
-                    <img src="../assets/about.jpg" alt="image">
+                    <img src="../assets/about.jpg" alt="image" />
                 </div>
             </b-col>
         
@@ -74,6 +74,7 @@
         color: #787878;
         font-size: .96rem;
         font-weight: 100;
+        margin-bottom:2rem;
         
 
         h1{
