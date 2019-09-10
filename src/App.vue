@@ -9,7 +9,7 @@
     </b-row></b-container>
     <Partners :link="$url+'qfhnh'" :header="['id','name','image_url']" />
     <Contact />
-    <!--Footer /-->
+    <Footer />
   </div>
 </template>
 
@@ -22,7 +22,7 @@ import About from './components/About'
 import News from './components/News'
 import Partners from './components/Partners'
 import Contact from './components/Contact'
-//import Partners from './components/Footer'
+import Footer from './components/Footer'
 
 import Vue from 'vue';
 
@@ -45,7 +45,7 @@ export default {
     News,
     Partners,
     Contact,
-    //Footer,
+    Footer,
   }
 }
 </script>
